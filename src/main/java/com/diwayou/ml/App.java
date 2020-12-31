@@ -8,7 +8,7 @@ import java.util.concurrent.TimeUnit;
 
 public class App {
     public static void main(String[] args) throws InterruptedException {
-        String logFile = "D:\\opensource\\ml\\src\\main\\java\\com\\diwayou\\ml\\App.java";
+        String logFile = "/Users/gaopeng/Downloads/java/ml/pom.xml";
         SparkSession spark = SparkSession.builder().appName("Simple Application").master("local[*]").getOrCreate();
         Dataset<String> logData = spark.read().textFile(logFile).cache();
 
